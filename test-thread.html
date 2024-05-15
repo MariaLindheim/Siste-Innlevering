@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Grønn Glede - Chat</title>
+    <link rel="stylesheet" href="css/css.css"/>
+  </head>
+  <body>
+
+    <header id="headerplanter">
+      <div class="divContainer">
+        <div class="divSectionHeader"><a href="index.html"> <i class="fa-solid fa-leaf"></i> Grønn Glede</a></div>
+      </div>
+      <div class="divContainer3">
+        <div class="divSectionOne">
+          <a href="flere_planter.html">Flere Planter</a>
+        </div>
+      </div>
+      <div class="divContainer4">
+        <div class="divSectionTwo">
+          <a href="test-thread.html"> <b>Chat</b></a>
+        </div>
+      </div>
+      <div class="divContainer5">
+        <div class="divSectionThree">
+          <a href="spill.html">Spill</a>
+        </div>
+      </div>
+      <div class="divContainer6">
+        <div class="divSectionFour">
+          <a href="contact.html">Om oss</a>
+        </div>
+      </div>
+
+      <div class="mediaQueryHeader">
+        <div class="dropdown">
+          <button><ion-icon name="menu"></ion-icon></button>
+          <div class="dropdown-options">
+            <a href="paidToSeeMorePage.html">Fake news</a>
+            <a href="personvern.html">Personvern</a>
+            <a href="instagram.html">Instagram</a>
+            <a href="spillForside.html">Spill</a>
+            <a href="omOss.html">Om oss</a>
+            <a href="contact.html">Kontakt oss</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+  <template class="reply-input-template">
+    <div class="reply-input container">
+      <img src="/bilder/image-juliusomo.webp" alt="" class="usr-img">
+      <textarea class="cmnt-input" placeholder="Add a comment..."></textarea>
+      <button class="bu-primary">PUBLISER</button>
+    </div>
+  </template>
+
+  <template class="comment-template">
+    <div class="comment-wrp">
+      <div class="comment container">
+        <div class="c-score">
+          <p class="score-control score-plus">+</p>
+          <p class="score-number">5</p>
+          <p class="score-control score-minus">-</p>
+        </div>
+        <div class="c-controls">
+          <a  class="delete"><img src="/bilder/icon-delete.svg" alt="" class="control-icon">Slett</a>
+          <a  class="edit"><img src="/bilder/icon-edit.svg" alt="" class="control-icon"></a>
+          <a  class="reply"><img src="/bilder/icon-reply.svg" alt="" class="control-icon">Svar</a>
+        </div>
+        <div class="c-user">
+            <i class="fa-solid fa-house"></i>
+          <img src="/bilder/image-maxblagun.webp" alt="" class="usr-img">
+          <p class="usr-name">josse@hansen</p>
+          <p class="cmnt-at">11/06/2023</p>    
+        </div>
+        <p class="c-text">
+          <span class="reply-to"></span>
+          <span class="c-body"></span>
+        </p>
+      </div>
+      <div class="replies comments-wrp">
+      </div>
+    </div>
+  </template>
+<main class="main_thread">
+  <div class="comment-section">
+    <div class="comments-wrp">
+    </div> 
+  <div class="reply-input container">
+      <img src="bilder/chat.jpg" alt="profilbilde" class="usr-img">
+      <textarea class="cmnt-input" placeholder="Legg til kommentar...."></textarea>
+      <button class="bu-primary">PUBLISER</button>
+    </div> 
+  </div> 
+  
+  <div class="modal-wrp invisible">
+    <div class="modal container">
+      <h3>Slett kommentaren</h3>
+      <p>Er du sikker på at du ønsker å slette kommentaren? Det kan ikke reversjeres. </p>
+      <button class="yes">JA, SLETT</button>
+      <button class="no">NEI, AVLYS</button>
+    </div>
+  </div>
+</main>
+
+  <script src="js/thread.js"></script>
+  </body>
+</html>

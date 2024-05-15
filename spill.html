@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Grønn Glede - Spill</title>
+        <link rel="stylesheet" href="css/spill.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    </head>
+<body>
+  
+    <div class="tittel_spill">
+        <h1>Spill</h1>
+    </div>
+
+    <div class="tilbake_spill"> <a href="index.html"> Tilbake <i class="fa-solid fa-arrow-left"></i> </a> </div>
+
+    <section class="section_spill">
+
+        <div id="lives">
+            <div class="life"><i class="fa-solid fa-heart"></i></div>
+            <div class="life"><i class="fa-solid fa-heart"></i></div>
+            <div class="life"><i class="fa-solid fa-heart"></i></div>
+            <div class="life"><i class="fa-solid fa-heart"></i></div>
+            <div class="life"><i class="fa-solid fa-heart"></i></div>
+            <div class="life"><i class="fa-solid fa-heart"></i></div>
+            <div class="life"><i class="fa-solid fa-heart"></i></div>
+        </div>
+
+        <div id="gameOverContainer">
+            <h1 id="gameOverMessage">Planten har død</h1>
+            <div class="gameOverknapper">
+                <a href="spill.html">Prøv igjen <i class="fa-solid fa-rotate-right"></i></a>
+                <a href="index.html"> Tilbake <i class="fa-solid fa-arrow-left"></i> </a>
+            </div>
+        </div>
+
+        <div id="gameOverContainer_vannetformye">
+            <h1 id="gameOverMessage">Planten har død av overvanning</h1>
+            <div class="gameOverVanningKnapper">
+                <a href="spill.html">Prøv igjen <i class="fa-solid fa-rotate-right"></i></a>
+                <a href="index.html"> Tilbake <i class="fa-solid fa-arrow-left"></i> </a>
+            </div>
+        </div>
+
+        <div id="gameOverContainer_solformye">
+            <h1 id="gameOverMessage">Planten har død av for mye sol</h1>
+            <div class="gameOverVanningKnapper">
+                <a href="spill.html">Prøv igjen <i class="fa-solid fa-rotate-right"></i></a>
+                <a href="index.html"> Tilbake <i class="fa-solid fa-arrow-left"></i> </a>
+            </div>
+        </div>
+
+          <div id="startScreenContainer">
+            <h1 id="startH1Coockie">Velkommen hold planten i live!</h1>
+            <p>
+              Spillet er enkelt, hold planten i live! <br /> <br />
+              Gro den frem ved vanne eller skinne sollys på planten. Men om du lar den sitte for lenge, overvanner eller tørker den ut, kan den dø.</br> 
+              Klarer <b>du</b> å holde blanten i live?
+            </p>
+            <button id="startSpillBtn">Start Spill</button>
+          </div>
+
+          <button id="Vann"> <i class="fa-solid fa-droplet"></i> </button>
+          <button id="Sol"> <i class="fa-solid fa-sun"></i></button>
+
+        <div class="bilde_planter">
+            <div id="vann_bilde"></div>
+            <img id="bilde_plante" src="bilder/planter7.jpg" alt="planter">
+        </div>
+    </section>
+
+    
+<script src="js/spill.js"></script>
+</body>
+</html>
